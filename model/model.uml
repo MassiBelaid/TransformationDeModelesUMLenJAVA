@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_qO3jUPzJEeqsxYHE5gYQsw" name="model" visibility="public">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_qXeFsPzJEeqsxYHE5gYQsw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_2V6NoPzJEeqsxYHE5gYQsw" name="Personne">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qz1cIPzKEeqsxYHE5gYQsw" name="Nom">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_sFxlIPzKEeqsxYHE5gYQsw" name="Telephone">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_tTbEAPzKEeqsxYHE5gYQsw" name="AdresseMail">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_D8bRMPzLEeqsxYHE5gYQsw" name="adresse" type="_3YJGsPzJEeqsxYHE5gYQsw" association="_D8YN4PzLEeqsxYHE5gYQsw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_3YJGsPzJEeqsxYHE5gYQsw" name="Adresse">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_3ZriUPzKEeqsxYHE5gYQsw" name="Rue">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_54fHEPzKEeqsxYHE5gYQsw" name="NumRue">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_8_tWsPzKEeqsxYHE5gYQsw" name="Ville">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="__laNoPzKEeqsxYHE5gYQsw" name="CodePostale">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_O10SEPzKEeqsxYHE5gYQsw" name="Professeur">
+    <generalization xmi:type="uml:Generalization" xmi:id="_gN3GgPzLEeqsxYHE5gYQsw" general="_2V6NoPzJEeqsxYHE5gYQsw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_S69igPzKEeqsxYHE5gYQsw" name="salaire">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_PB174PzKEeqsxYHE5gYQsw" name="Etudiant">
+    <generalization xmi:type="uml:Generalization" xmi:id="_fr-hcPzLEeqsxYHE5gYQsw" general="_2V6NoPzJEeqsxYHE5gYQsw"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_ao5ekPzKEeqsxYHE5gYQsw" name="NumEtudiant">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_x1cbsPzgEeqyhpAC3kgJvQ" name="marcher"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_D8YN4PzLEeqsxYHE5gYQsw" memberEnd="_D8bRMPzLEeqsxYHE5gYQsw _D8b4QvzLEeqsxYHE5gYQsw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D8aqIPzLEeqsxYHE5gYQsw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D8aqIfzLEeqsxYHE5gYQsw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_D8b4QvzLEeqsxYHE5gYQsw" name="personne" type="_2V6NoPzJEeqsxYHE5gYQsw" association="_D8YN4PzLEeqsxYHE5gYQsw">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_ZMQsAPzLEeqsxYHE5gYQsw"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_aZ-8APzOEeqyhpAC3kgJvQ" name="MonPackage"/>
+  <packagedElement xmi:type="uml:Class" xmi:id="_VYh6sPzWEeqyhpAC3kgJvQ" name="Teste">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_AdT9oPzZEeqyhpAC3kgJvQ" name="prop1">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+  </packagedElement>
+</uml:Model>

@@ -1,0 +1,33 @@
+
+*** These modified files were found in JOE when it aborted on Tue Sep 22 16:54:07 2020
+*** JOE was aborted because the terminal closed
+
+*** Fichier '(Sans nom)'
+/home/e20190015195/eclipse-workspace/TransformationDeModèlesUML/.git/COMMIT_EDITMSG
+
+*** Fichier '/home/e20190015195/eclipse-workspace/TransformationDeModèlesUML/.git/COMMIT_EDITMSG'
+qui
+
+
+# Veuillez saisir le message de validation pour vos modifications. Les lignes
+# commençant par '#' seront ignorées, et un message vide abandonne la validation.
+#
+# Sur la branche master
+#
+# Validation initiale
+#
+# Modifications qui seront validées :
+#	nouveau fichier : .classpath
+#	nouveau fichier : .project
+#	nouveau fichier : META-INF/MANIFEST.MF
+#	nouveau fichier : bin/LoadUML.class
+#	nouveau fichier : model/model.di
+#	nouveau fichier : model/model.notation
+#	nouveau fichier : model/model.uml
+#	nouveau fichier : model/nouveauModel.uml
+#	nouveau fichier : src/LoadUML.java
+#
+
+*** Fichier '* Startup Log *'
+Traitement de '/etc/joe/editorrc'...Traitement de '/etc/joe/ftyperc'...Finished processing /etc/joe/ftyperc
+Finished processing /etc/joe/editorrc

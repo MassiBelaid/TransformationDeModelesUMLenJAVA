@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="ASCII"?>
+<uml:Model xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" name="model" visibility="public">
+  <packageImport>
+    <importedPackage href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xsi:type="uml:Class" name="Personne">
+    <ownedAttribute name="Nom">
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute name="Telephone">
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute name="AdresseMail">
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute name="adresse" type="//Adresse" association="//@packagedElement.4"/>
+    <ownedOperation name="marcher"/>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" name="Adresse">
+    <ownedAttribute name="Rue">
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute name="NumRue">
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+    <ownedAttribute name="Ville">
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute name="CodePostale">
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Integer"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" name="Professeur">
+    <generalization general="//Personne"/>
+    <ownedAttribute name="salaire">
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Class" name="Etudiant">
+    <generalization general="//Personne"/>
+    <ownedAttribute name="NumEtudiant">
+      <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Association" memberEnd="//Personne/adresse //@packagedElement.4/personne">
+    <eAnnotations source="org.eclipse.papyrus">
+      <details key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd name="personne" type="//Personne" association="//@packagedElement.4">
+      <lowerValue xsi:type="uml:LiteralInteger"/>
+    </ownedEnd>
+  </packagedElement>
+  <packagedElement xsi:type="uml:Package" name="MonPackage">
+    <packagedElement xsi:type="uml:Class" name="Teste">
+      <ownedAttribute name="prop1" visibility="private">
+        <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+      </ownedAttribute>
+      <ownedOperation name="getprop1">
+        <ownedParameter direction="return">
+          <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation name="setprop1">
+        <ownedParameter name="prop1">
+          <type xsi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#Real"/>
+        </ownedParameter>
+      </ownedOperation>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
