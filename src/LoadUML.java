@@ -126,6 +126,8 @@ public class LoadUML {
 		System.out.println("Class moved");
 	}
 	
+	
+	//Remplace un attribut public en private et une paire d'accesseur
 	public static void encapsulation(Class cls, Property prop) {
 		if(prop.getVisibility() == VisibilityKind.PUBLIC_LITERAL) {
 			System.out.println(prop.getVisibility());

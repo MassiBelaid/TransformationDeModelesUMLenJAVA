@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_8Hp0MAfJEeuT4PJzX_SVyw" name="state">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_8IVwsAfJEeuT4PJzX_SVyw">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Class" xmi:id="_9UOVAAfJEeuT4PJzX_SVyw" name="Context" classifierBehavior="_TPL10AfdEeugrNda90_qpQ">
+    <ownedBehavior xmi:type="uml:StateMachine" xmi:id="_TPL10AfdEeugrNda90_qpQ" name="Machine a etat">
+      <region xmi:type="uml:Region" xmi:id="_UMfyoAfdEeugrNda90_qpQ" name="Region1">
+        <transition xmi:type="uml:Transition" xmi:id="_hQKgcAfhEeugrNda90_qpQ" source="_WxpP8AfdEeugrNda90_qpQ" target="_YF00oAfdEeugrNda90_qpQ"/>
+        <transition xmi:type="uml:Transition" xmi:id="_ODsEgAfhEeugrNda90_qpQ" source="_YF00oAfdEeugrNda90_qpQ" target="_soSMEAfdEeugrNda90_qpQ">
+          <trigger xmi:type="uml:Trigger" xmi:id="_fIYUkAfhEeugrNda90_qpQ" name="m2" event="_ei63EAfhEeugrNda90_qpQ"/>
+        </transition>
+        <transition xmi:type="uml:Transition" xmi:id="_KICuUAfhEeugrNda90_qpQ" source="_soSMEAfdEeugrNda90_qpQ" target="_YF00oAfdEeugrNda90_qpQ">
+          <trigger xmi:type="uml:Trigger" xmi:id="_aCIzgAfhEeugrNda90_qpQ" name="m1" event="_ZyJ2wAfhEeugrNda90_qpQ"/>
+        </transition>
+        <subvertex xmi:type="uml:Pseudostate" xmi:id="_WxpP8AfdEeugrNda90_qpQ" name="initial"/>
+        <subvertex xmi:type="uml:State" xmi:id="_YF00oAfdEeugrNda90_qpQ" name="StateA"/>
+        <subvertex xmi:type="uml:State" xmi:id="_soSMEAfdEeugrNda90_qpQ" name="StateB"/>
+      </region>
+    </ownedBehavior>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Jrd-gAfKEeuT4PJzX_SVyw" name="request"/>
+    <nestedClassifier xmi:type="uml:Class" xmi:id="_A_PTkAfdEeugrNda90_qpQ" name="Class2"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:CallEvent" xmi:id="_O_xHsAfgEeugrNda90_qpQ"/>
+  <packagedElement xmi:type="uml:CallEvent" xmi:id="_ZyJ2wAfhEeugrNda90_qpQ"/>
+  <packagedElement xmi:type="uml:CallEvent" xmi:id="_ei63EAfhEeugrNda90_qpQ" visibility="public"/>
+  <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_KQHMkAfeEeugrNda90_qpQ">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_KQJo0AfeEeugrNda90_qpQ" source="http://www.eclipse.org/uml2/2.0.0/UML">
+      <references xmi:type="ecore:EPackage" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#_Kv8EIKFXEeS_KNX0nfvIVQ"/>
+    </eAnnotations>
+    <appliedProfile xmi:type="uml:Profile" href="pathmap://PAPYRUS_ACTIONLANGUAGE_PROFILE/ActionLanguage-Profile.profile.uml#ActionLanguage"/>
+  </profileApplication>
+</uml:Model>
